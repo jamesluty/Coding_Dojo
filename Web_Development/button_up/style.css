@@ -1,0 +1,25 @@
+* {
+    margin: 10px;
+}
+
+
+
+#search {
+    color: rgb(28,160,161);
+    border-width: 1px;
+    border-color: rgb(28,160,161);
+    border-radius: 10px;
+}
+
+#plus {
+    color: white;
+    background-color: turquoise;
+    border-radius: 50%;
+    border-color: white;
+}
+
+#create {
+    color: white;
+    background-color: blue;
+    border-color: black;
+}
