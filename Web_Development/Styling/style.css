@@ -1,0 +1,30 @@
+body > h1 {
+    padding-left: 10px;
+}
+
+h1 {
+    background-color: black;
+    color: aqua;
+    font-family: ;
+}
+
+#my {
+    color: white;
+    padding-left: 10px;
+}
+
+h2 {
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+}
+
+h3 {
+    text-align: right;
+    background-color: rgb(159,197,248);
+    color: black;
+    text-decoration: underline;
+    padding-right: 15px;
+}
