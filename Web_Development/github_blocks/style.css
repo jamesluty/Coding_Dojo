@@ -35,3 +35,12 @@ img {
     display: flex;
     justify-content: space-around;
 }
+
+.credit {
+    display: inline;
+}
+
+p {
+    align-items: center;
+    text-align: center;
+}
