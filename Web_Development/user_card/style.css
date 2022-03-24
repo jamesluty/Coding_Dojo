@@ -1,0 +1,56 @@
+.profile {
+    border:3px gainsboro solid;
+    width: 30%;
+    height: 40%;
+}
+
+.header {
+    background-color: rgb(23,162,184);
+    height: 50px;
+}
+
+.icon {
+    background-color: white;
+    height: 50px;
+    padding: 0px;
+    border-radius: 50%;
+    border: 3px lightgray solid;
+    padding: 2px;
+    position: absolute;
+    left: 25px;
+    top: 25px
+}
+
+h1, h3, p, img {
+    padding: 0px 10px;
+    /* font-family: sans-serif; */
+}
+
+h1 {
+    height: 25px;
+}
+
+p {
+    height: 5px;
+    font-weight: bold;
+}
+
+.location {
+    align-items: center;
+    height: 20px;
+    display: flex;
+}
+.location img {
+    height: 15px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    text-decoration: underline;
+}
+
+.link img {
+    height: 15px;
+}
