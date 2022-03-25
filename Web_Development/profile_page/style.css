@@ -1,0 +1,199 @@
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0px 50px;
+    align-items: center;
+}
+
+.navbar ul {
+    height: 20px;
+    text-decoration: none;
+    color: lightgray;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navbar li{
+    padding-bottom: 12px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+#h {
+    color: white;
+}
+
+.sign {
+    height: 25px;
+    background-color: rgb(23,162,184);
+    color: white;
+    border: none;
+}
+
+.main {
+    border: 3px gainsboro solid;
+    margin: 25px 0px 0px 100px;
+}
+
+.body {
+    display: flex;
+}
+
+.left {
+    flex: 2;
+}
+
+.right {
+    flex: 1;
+}
+
+.header {
+    background-color: rgb(23,162,184);
+    height: 50px;
+}
+
+.icon {
+    background-color: white;
+    height: 50px;
+    padding: 0px;
+    border-radius: 50%;
+    border: 3px lightgray solid;
+    padding: 2px;
+    position: absolute;
+    left: 125px;
+    top: 100px
+}
+
+h1, h2, h3, p, img {
+    padding: 0px 10px;
+}
+
+h1 {
+    height: 25px;
+}
+
+p {
+    height: 5px;
+    font-weight: bold;
+}
+
+.location {
+    align-items: center;
+    height: 20px;
+    display: flex;
+}
+.location img {
+    height: 15px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    text-decoration: underline;
+}
+
+.link img {
+    height: 15px;
+}
+
+.edu {
+    border: 3px gainsboro solid;
+    margin: 25px 0px 0px 100px;
+    height: 135px;
+}
+
+.edu h2 {
+    height: 30px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 5px 15px;
+}
+
+.sub, .sub2 {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 30px;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+
+.body {
+    display: flex;
+    height: auto;
+}
+
+.con {
+    border: 3px gainsboro solid;
+    height: 135px;
+    margin: 25px 50px 0px 25px;
+}
+
+.sub h3 {
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+
+.sub2 h3 {
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+
+.format {
+    justify-content: space-between;
+}
+
+.mem {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mem img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+#accept, #close {
+    height: 25px;
+}
+
+.mem2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.mem2 img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.con2 {
+    border: 3px gainsboro solid;
+    height: 200px;
+    margin: 20px 50px 0px 25px;
+}
+
+.view {
+    border: 3px gainsboro solid;
+    height: 20px;
+    margin: -3px 50px 0px 25px;
+    padding: 5px 0px 5px 5px;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+}
