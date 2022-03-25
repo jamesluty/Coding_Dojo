@@ -4,7 +4,7 @@
 
 
 
-#search {
+.search {
     color: rgb(28,160,161);
     border-width: 1px;
     border-color: rgb(28,160,161);
@@ -12,7 +12,7 @@
     border-style: solid;
 }
 
-#plus {
+.plus {
     color: white;
     background-color: turquoise;
     border-radius: 50%;
@@ -21,7 +21,7 @@
     border-style: solid;
 }
 
-#create {
+.create {
     color: white;
     background-color: blue;
     border-color: black;
