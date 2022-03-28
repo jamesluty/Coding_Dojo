@@ -44,6 +44,7 @@
     border: 3px black solid;
     margin: 20px 50px 20px 0px;
     padding: 0px 20px 40px 20px;
+    height: 150px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -51,11 +52,13 @@
 
 .ninja p {
     font-size: 15pt;
+    height: 15px;
 }
 
 .ninja h1 {
     font-family: cursive;
     width: 200px;
+    height: 25px;
 }
 
 #likes {
@@ -70,7 +73,7 @@
     border: 3px black solid;
     margin: 20px 50px 20px 0px;
     padding: 0px 20px 40px 20px;
-    font-size: 20pt;
+    font-size: 15pt;
 }
 
 .defButton {
