@@ -12,5 +12,5 @@ function remove(button) {
 
 function likes(like, update) {
     alert(like);
-    update.innerText = "1 like"
+    update.innerText = "1 Like"
 }
