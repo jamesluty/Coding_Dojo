@@ -1,0 +1,82 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    background-color: gray;
+    margin: 0px 150px;
+    padding: 0px 30px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search {
+    border: 1px black solid;
+    width: 400px;
+    height: 25px;
+}
+
+#navButton {
+    background-color: rgb(43,120,228);
+    border: 3px black solid;
+    box-shadow: 3px 3px 3px;
+    width: 100px;
+    height: 30px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 150px;
+}
+
+.left {
+    flex: 3;
+}
+
+.right {
+    flex: 1;
+}
+
+.ninja {
+    border: 3px black solid;
+    margin: 20px 50px 20px 0px;
+    padding: 0px 20px 40px 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.ninja p {
+    font-size: 15pt;
+}
+
+.ninja h1 {
+    font-family: cursive;
+    width: 200px;
+}
+
+#likes {
+    background-color: rgb(255,217,102);
+    border: 3px black solid;
+    box-shadow: 3px 3px 3px;
+    width: 100px;
+    height: 25px;
+}
+
+.def {
+    border: 3px black solid;
+    margin: 20px 50px 20px 0px;
+    padding: 0px 20px 40px 20px;
+    font-size: 20pt;
+}
+
+.defButton {
+    background-color: rgb(147,196,125);
+    border: 3px black solid;
+    box-shadow: 3px 3px 3px;
+    width: 200px;
+    height: 40px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+<body>
+    <div class="nav">
+        <h1 id="dojo">Dojonary</h1>
+        <input id="search" type="Text" placeholder="Search">
+        <button onclick="login(this)" id="navButton">Login</button>
+    </div>
+    <div class="body">
+        <div class="left">
+            <div class="ninja">
+                <div>
+                    <h1>ninja</h1>
+                    <p id="noun">noun</p>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button onclick="likes('Ninja was liked', this)" id="likes">Like</button>
+                </div>
+                <p>A pracitioner skilled in the <a href="https://www.dictionary.com/browse/japanese">Japanese</a> art of <a href="https://www.dictionary.com/browse/ninjutsu">ninjutsu</a></p>
+            </div>
+            <div class="ninja">
+                <div>
+                    <h1>ninja</h1>
+                    <p id="noun">noun</p>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button onclick="alert('Ninja was liked')" id="likes">Like</button>
+                </div>
+                <p>A <a href="https://www.dictionary.com/browse/programmer">programmer</a> who breaks down problems with <a href="https://www.dictionary.com/browse/zen">zen</a>-like focus</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="def">
+                <p>Dojonary is defined by <b>YOU</b></p>
+                <button onclick="remove(this)" class="defButton">Add Definition</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
