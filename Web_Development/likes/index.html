@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300;400;500&family=Source+Code+Pro&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header bar -->
+    <h1 class="header">Network</h1>
+
+    <!-- your feed header -->
+    <h1 class="f-header t-align">Your Feed</h1>
+
+    <!-- body -->
+    <div class="flex">
+
+        <!-- left column -->
+        <div class=" left col-1 t-align border">
+            <div class="margin">
+                <img src="./img/phil-s.jpg" alt="phil" id="mainImg">
+            </div>
+            <div class="margin">
+                <a href="#">Add an avatar</a>
+            </div>
+            <h2 class="margin">James Doe</h2>
+        </div>
+
+        <!-- right column -->
+        <div class="right col-4">
+
+            <!-- sub column 1 -->
+            <div class="sub col j-content-between border">
+                <div class="j-content-between a-items flex">
+                    <div>
+                        <h2>Neil M</h2>
+                    </div>
+                    <div class="like flex">
+                        <p id="likes1">0 like(s)</p>
+                        <button class="likeButton" onclick="addLike()">Like</button>
+                    </div>
+                </div>
+                <div>
+                    <p class="comment">
+                        I just set up this new discord bot, let me know what you all think.
+                        <a href="#">link</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- sub column 2 -->
+            <div class="sub-col j-content-between border">
+                <div class="j-content-between a-items flex">
+                    <div>
+                        <h2>Nicole K</h2>
+                    </div>
+                    <div class="like flex">
+                        <p id="likes2">0 like(s)</p>
+                        <button class="likeButton" onclick="addLike2()">Like</button>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+                </div>
+            </div>
+
+            <!-- sub column 3 -->
+            <div class="sub-col j-content-between border">
+                <div class="j-content-between a-items flex">
+                    <div>
+                        <h2>Jim R</h2>
+                    </div>
+                    <div class="like flex">
+                        <p id="likes3">0 like(s)</p>
+                        <button class="likeButton" onclick="addLike3()">Like</button>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

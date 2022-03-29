@@ -18,8 +18,6 @@ function rand(arr) {
     return Math.floor(Math.random() * arr.length);
 }
 
-console.log(rand(options));
-
 var pizza1 = pizzaOven("deep dish", "traditional", "mozzarella", ["pepperoni", "sausage"]);
 console.log(pizza1);
 

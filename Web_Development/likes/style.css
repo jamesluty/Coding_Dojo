@@ -1,0 +1,107 @@
+/* generic css */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0% 15%;
+}
+
+.flex {
+    display: flex;
+}
+
+.t-align {
+    text-align: center;
+}
+
+.a-items {
+    align-items: center;
+}
+
+.j-content-between {
+    justify-content: space-between;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
+}
+
+.col-4 {
+    flex: 4;
+}
+
+.border {
+    border: 2px black solid;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+/* headers css */
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 10px 0px 10px 20px;
+}
+
+.f-header {
+    margin: 15px;
+}
+
+/* body css */
+
+a, h1, h2, p {
+    margin: 0px;
+}
+
+.left {
+    padding: 10px;
+    height: 275px;
+}
+
+.right {
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+}
+
+.margin {
+    margin: 20px 0px;
+}
+
+.name {
+    text-align: left;
+}
+
+.like {
+    justify-content: end;
+}
+/* .like p {
+    margin: 0px 10px;
+} */
+
+.comment {
+    margin: 20px 0px 10px 0px;
+}
+
+.likeButton {
+    background-color: rgb(255,217,102);
+    border: 2px black solid;
+    box-shadow: 3px 3px 3px;
+    color: black;
+    margin: 0px 10px;
+    width: 75px;
+}
+
+#mainImg {
+    width: 150px;
+    border-radius: 50%;
+}
