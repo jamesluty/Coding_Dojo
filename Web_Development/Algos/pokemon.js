@@ -61,10 +61,9 @@ for(var i=0; i<pokémon.length; i++) {
 }
 
 function reverse(poke) {
-    var split = poke.split("");
     var newStr = "";
-    for(var i = split.length -1; i >= 0; i--){
-        newStr += split[i];
+    for(var i = poke.length -1; i >= 0; i--){
+        newStr += poke[i];
     }
     return newStr;
 }
