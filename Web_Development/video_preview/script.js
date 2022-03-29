@@ -4,6 +4,7 @@ var vid = document.getElementById("beach");
 
 function start() {
     // console.log("over");
+    vid.muted = true;
     vid.play();
 }
 
