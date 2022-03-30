@@ -1,0 +1,105 @@
+/* global css */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar css */
+.navbar {
+    align-items: center;
+    background-color: rgb(159,197,248);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px;
+}
+
+.cities {
+    display: flex;
+    gap: 30px;
+}
+
+.cities button {
+    background-color: rgb(159,197,248);
+    border: none;
+    color: white;
+}
+
+/* city name header */
+.header {
+    border-bottom: 4px solid black;
+    display: flex;
+    margin: 0px 200px;
+    justify-content: space-between;
+}
+
+/* forcast block */
+.forcast {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px 200px;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-around;
+}
+
+.today, .tomorrow, .friday, .saturday {
+    background-color: rgb(238,238,238);
+    flex: 1;
+    margin: 30px 0px;
+    width: 75px;
+}
+
+.today img, .tomorrow img, .friday img, .saturday img {
+    border-radius: 50%;
+    padding: 20px;
+    width: 200px;
+}
+
+.today p, .tomorrow p, .friday p, .saturday p {
+    font-weight: bold;
+    font-size: 15;
+}
+
+.tempType {
+    align-items: center;
+    display: flex;
+    
+}
+
+.tempType {
+    gap: 10px;
+}
+
+.high1, .high2, .high3, .high4 {
+    color: red;
+}
+
+.low1, .low2, .low3, .low4 {
+    color: blue;
+}
+
+/* cookie notification */
+.cookie {
+    align-items: center;
+    background-color: rgb(238,238,238);
+    border: 3px solid black;
+    display: flex;
+    gap: 20px;
+    height: 100px;
+    margin: 0px 206px 0px 200px;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.accept {
+    background-color: rgb(159,197,248);
+    border: 3px solid black;
+    box-shadow: 3px 3px 3px;
+    height: 30px;
+    width: 100px;
+}
