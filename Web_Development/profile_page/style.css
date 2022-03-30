@@ -29,7 +29,7 @@
     text-decoration: none;
 }
 
-#h {
+.h {
     color: white;
 }
 
@@ -107,10 +107,19 @@ p {
     height: 15px;
 }
 
+.editName {
+    background-color: white;
+    color: blue;
+    border: none;
+}
+
 .edu {
     border: 3px gainsboro solid;
     margin: 25px 0px 0px 100px;
-    height: 135px;
+}
+
+.edu p {
+    padding: 5px 0px 5px 10px;
 }
 
 .edu h2 {
@@ -119,6 +128,14 @@ p {
     color: white;
     margin: 0px;
     padding: 5px 15px;
+}
+
+.info {
+    padding: 0px 0px 15px 0px;
+}
+
+#p2 {
+    color: gray;
 }
 
 .sub, .sub2 {
@@ -138,7 +155,6 @@ p {
 
 .con {
     border: 3px gainsboro solid;
-    height: 135px;
     margin: 25px 50px 0px 25px;
 }
 
@@ -149,44 +165,43 @@ p {
 
 .sub2 h3 {
     background-color: grey;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
 .format {
     justify-content: space-between;
 }
 
-.mem {
+.mem1, .mem2 {
     padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.mem img {
+.mem1 img, .mem2 img {
     height: 30px;
     border-radius: 50%;
 }
 
-#accept, #close {
+.accept, .close {
     height: 25px;
 }
 
-.mem2 {
+.mem3 {
     display: flex;
     justify-content: start;
     align-items: center;
     border-radius: 50%;
 }
 
-.mem2 img {
+.mem3 img {
     height: 30px;
     border-radius: 50%;
 }
 
 .con2 {
     border: 3px gainsboro solid;
-    height: 200px;
     margin: 20px 50px 0px 25px;
 }
 
@@ -200,4 +215,10 @@ p {
 .align {
     display: flex;
     align-items: center;
+    background-color: white;
+    border: none;
+}
+
+.connections {
+    margin: 10px 0px;
 }
