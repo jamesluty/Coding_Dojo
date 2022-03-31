@@ -9,7 +9,8 @@ function showAlert(){
 }
 
 function changeTemp(degree,high1,high2,high3,high4,low1,low2,low3,low4){
-    var changeDegree = document.querySelector(degree);
+    var changeDegree = degree.value;
+    console.log(changeDegree);
     var newHigh1 = document.querySelector(high1);
     var newHigh2 = document.querySelector(high2);
     var newHigh3 = document.querySelector(high3);
@@ -26,8 +27,7 @@ function changeTemp(degree,high1,high2,high3,high4,low1,low2,low3,low4){
     var parseLow2 = parseInt(newLow2.innerText);
     var parseLow3 = parseInt(newLow3.innerText);
     var parseLow4 = parseInt(newlow4.innerText);
-    console.log(changeDegree);
-    if (changeDegree.innerText == "°C"){
+    if (changeDegree == "fahrenheit"){
         newHigh1.innerText = "75°";
         newHigh2.innerText = "80°";
         newHigh3.innerText = "69°";
@@ -46,5 +46,4 @@ function changeTemp(degree,high1,high2,high3,high4,low1,low2,low3,low4){
         newLow3.innerText = "16°";
         newlow4.innerText = "21°";
     }
-    console.log(changeDegree.innerText);
 }

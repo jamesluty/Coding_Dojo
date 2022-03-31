@@ -28,7 +28,7 @@
         <h1>San Jose</h1>
         <div class="tempType">
             <p>show temperature in</p>
-            <select name="degrees" id="degreeType" onchange="changeTemp('.degrees', '.high1', '.high2', '.high3', '.high4', '.low1', '.low2', '.low3', '.low4')">
+            <select name="degrees" id="degreeType" onchange="changeTemp(this, '.high1', '.high2', '.high3', '.high4', '.low1', '.low2', '.low3', '.low4')">
                 <option value="celsius" class="degrees">°C</option>
                 <option value="fahrenheit" class="degrees">°F</option>
             </select>
@@ -39,7 +39,7 @@
     <div class="forcast">
         <div class="today">
             <h2>Today</h2>
-            <img src="./img/some_rain.png" alt="some_rain">
+            <img src="./img/some_rain.png" alt="some_rain" class="weather">
             <p>some rain</p>
             <div class="temp">
                 <h3 class="high1">24°</h3>
@@ -48,7 +48,7 @@
         </div>
         <div class="tomorrow">
             <h2>Tomorrow</h2>
-            <img src="./img/some_sun.png" alt="some_sun">
+            <img src="./img/some_sun.png" alt="some_sun" class="weather">
             <p>some rain</p>
             <div class="temp">
                 <h3 class="high2">27°</h3>
@@ -57,7 +57,7 @@
         </div>
         <div class="friday">
             <h2>Friday</h2>
-            <img src="./img/some_clouds.png" alt="some_clouds">
+            <img src="./img/some_clouds.png" alt="some_clouds" class="weather">
             <p>some rain</p>
             <div class="temp">
                 <h3 class="high3">21°</h3>
@@ -66,7 +66,7 @@
         </div>
         <div class="saturday">
             <h2>Saturday</h2>
-            <img src="./img/some_sun.png" alt="some_sun">
+            <img src="./img/some_sun.png" alt="some_sun" class="weather">
             <p>some rain</p>
             <div class="temp">
                 <h3 class="high4">26°</h3>

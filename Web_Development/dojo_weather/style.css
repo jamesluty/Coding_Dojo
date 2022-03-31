@@ -53,10 +53,10 @@ body {
     width: 75px;
 }
 
-.today img, .tomorrow img, .friday img, .saturday img {
+.weather {
     border-radius: 50%;
-    padding: 20px;
-    width: 200px;
+    padding: 5%;
+    width: 80%;
 }
 
 .today p, .tomorrow p, .friday p, .saturday p {
