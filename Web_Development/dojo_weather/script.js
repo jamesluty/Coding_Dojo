@@ -26,7 +26,8 @@ function changeTemp(degree,high1,high2,high3,high4,low1,low2,low3,low4){
     var parseLow2 = parseInt(newLow2.innerText);
     var parseLow3 = parseInt(newLow3.innerText);
     var parseLow4 = parseInt(newlow4.innerText);
-    if (changeDegree.innerText == "°F"){
+    console.log(changeDegree);
+    if (changeDegree.innerText == "°C"){
         newHigh1.innerText = "75°";
         newHigh2.innerText = "80°";
         newHigh3.innerText = "69°";
