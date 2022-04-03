@@ -16,7 +16,7 @@
                 else if (walkValue == 2){
                     walkValue = 1;
                 }
-                if(e.keyCode == 37){
+                if(e.keyCode == 37 && leftValue > 0){
                     // Left
                     leftValue = leftValue - 25;
                     document.getElementById("character").style.left = leftValue+"px";
@@ -28,7 +28,7 @@
                     document.getElementById("character").style.left = leftValue+"px";
                     document.getElementById("character").style.backgroundImage = "url('img/right"+walkValue+".png')";
                 }
-                else if (e.keyCode == 38){
+                else if (e.keyCode == 38 && topValue > 0){
                     // Top
                     topValue = topValue - 25;
                     document.getElementById("character").style.top = topValue+"px";
