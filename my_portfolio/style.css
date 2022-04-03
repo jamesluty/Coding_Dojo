@@ -1,0 +1,93 @@
+/* global */
+* {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0px;
+}
+
+/* css classes */
+.flex {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+/* navbar */
+.navbar {
+    background-color: rgb(17,105,160);
+    border-bottom: 5px solid black;
+    color: white;
+    position: fixed;
+    top: 0;
+    opacity: 90%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px){
+    .sm {
+        display: none;
+    }
+}
+
+.navbar h1 {
+    font-family: cursive;
+    flex: 2;
+    padding-left: 2%;
+}
+
+.navWrapper {
+    flex: 3;
+    justify-content: end;
+    list-style: none;
+    padding: 0px;
+}
+
+.navWrapper li {
+    padding: 20px 20px;
+}
+
+.navbar a {
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 15pt;
+    text-decoration: none;
+}
+
+/* About me section */
+.bodyHeader {
+    font-family: cursive;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+#about {
+    padding-top: 100px;
+}
+
+.aboutContent {
+    gap: 10%;
+    font-size: 15pt;
+    font-weight: bold;
+    flex-wrap: column;
+    padding: 30px 15%;
+}
+
+#slideShow1 {
+    border-radius: 2%;
+    gap: 25px;
+    height: 250px;
+    width: auto;
+}
+
+#slideShow2, #slideShow3, #slideShow4 {
+    display: none;
+}
+
+/* Projects section */
