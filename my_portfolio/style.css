@@ -79,14 +79,14 @@
     padding: 30px 15%;
 }
 
-#slideShow1 {
+#slideShow {
     border-radius: 2%;
     gap: 25px;
     height: 250px;
     width: auto;
 }
 
-#slideShow2, #slideShow3, #slideShow4 {
+#slideShowHidden {
     display: none;
 }
 

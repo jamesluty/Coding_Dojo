@@ -1,6 +1,9 @@
 function changeImg(){
-    document.getElementById('slideShow1').style.display = 'none';
-    
+    var imgArray = ['slideShow1', 'slideShow2', 'slideShow 3', 'slideShow4'];
+    for(i=0; i<imgArray.length; i++){
+        document.getElementsByClassName(imgArray[i]).style.display = 'none';
+        document.getElementsByClassName(imgArray[1]).style.display = 'inherit'
+    }
 }
 
 setTimeout(changeImg, 3000);
