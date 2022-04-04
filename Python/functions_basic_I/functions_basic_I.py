@@ -33,14 +33,14 @@ def number_of_great_lakes():
     print(5)
 x = number_of_great_lakes()
 print(x)
-# Nothing is being returned from the function therefore it will print undefined or none.
+# Nothing is being returned from the function therefore it will print 5 while it runs the function and then it will print none.
 
 
 # #6
 def add(b,c):
     print(b+c)
 print(add(1,2) + add(2,3))
-# Nothing is being returned from the function therefore it will print undefined or none.
+# This will create and erro because nothing is returned from the function and therefore can not complete the equation in the print statement/
 
 #7
 def concatenate(b,c):
