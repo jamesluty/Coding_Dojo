@@ -50,8 +50,10 @@
 
 # def iterateDictionary(someList):
 #     for listValue in someList:
-#         for key, value in listValue.items():
-#             print(key, " - ", value)
+#         print("first_name - " + listValue['first_name'] + ", " + "last_name - " + listValue['last_name'])
+        
+        # for key, value in listValue.items():
+        #     print(key + " - " + value)
 
 # iterateDictionary(students) 
 
@@ -81,22 +83,23 @@
 
 
 # 4. Iterate Through a Dictionary With List Values
-dojo = {
-    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
-    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
-}
 
-def printInfo(dict):
-    firstList = dict['locations']
-    secondList = dict['instructors']
+# dojo = {
+#     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+#     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+# }
 
-    print(str(len(firstList)) + " LOCATIONS")
-    for city in firstList:
-        print(city)
+# def printInfo(dict):
+#     firstList = dict['locations']
+#     secondList = dict['instructors']
 
-    print(str(len(secondList)) + "INSTRUCTORS")
-    for name in secondList:
-        print(name)
+#     print(str(len(firstList)) + " LOCATIONS")
+#     for city in firstList:
+#         print(city)
+
+#     print(str(len(secondList)) + "INSTRUCTORS")
+#     for name in secondList:
+#         print(name)
 
 
-printInfo(dojo)
+# printInfo(dojo)
