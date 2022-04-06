@@ -3,12 +3,6 @@ import random
 
 class Ninja(Character):
 
-    # def __init__(self, name):
-    #     self.name = name
-    #     self.strength = 10
-    #     self.speed = 5
-    #     self.health = 100
-
     def __init__( self, name, health=100, energy =100):
         super().__init__(name, health, energy)
 
