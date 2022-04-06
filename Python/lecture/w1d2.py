@@ -22,8 +22,27 @@ class Dog:
         for dog in cls.all_dogs:
             print(f"{dog.name} is {dog.age}")
 
-bubba = Dog("Bubba", 1, "black")
-cher = Dog("Cher", 1, "white w/ a black spot")
+class User:
+    def __init__(self, fname, lname, dog_name = "bubba", age = 1, hair_color = "black"):
+        self.first_name = fname
+        self.last_name = lname
+        self.dog = Dog(dog_name, age, hair_color)
+
+    def pet_bark(self):
+        self.dog.bark()
+
+james = User("James", "Luty", "Bella", 2, "Black")
+pable = User("Pablo", "Padilla")
+
+print(f"{james.first_name} {james.last_name}")
+
+james.dog.bark()
+james.pet_bark()
+
+
+
+# bubba = Dog("Bubba", 1, "black")
+# cher = Dog("Cher", 1, "white w/ a black spot")
 
 # Dog.print_dogs()
 
