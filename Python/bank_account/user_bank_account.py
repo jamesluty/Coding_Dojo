@@ -1,6 +1,3 @@
-from genericpath import exists
-
-
 class User:
     bank_name = "First National Dojo"
     def __init__(self, name, email, dob, accountType = "Checking", int_rate = .01, balance = 0):
@@ -38,14 +35,19 @@ class User:
 
     def transfer_money(self, otherUser, otherUserAccount, amount, account):
         account_type = self.account.account_type
-        # other_account = otherUserAccount.account.account_type
+        other_account = otherUserAccount
         if self.account.balance >= amount and account == account_type:
-            otherUser.account.deposit(amount, "Checking")
-            self.make_withdrawal(amount, account)
-            # print(f"User: {otherUser.name}, Balance: {otherUser.balance}")
-            # print(f"User: {self.name}, Balance: {self.balance}")
+            if otherUserAccount != other_account:
+                otherUser.make_deposit(amount, other_account)
+                self.make_withdrawal(amount, account_type)
+                print(f"User: {otherUser.name}, Balance: {otherUser.account.balance}")
+                print(f"User: {self.name}, Balance: {self.account.balance}")
+            else:
+                print(f"{otherUser.name} does not have a {otherUserAccount} account to transfer to!")
+        elif self.account.balance < amount:
+            print("You do not have enough funds to make this transfer")
         else:
-            print("test")
+            print(f"{account} account to transfer from does not exist!")
 
 class BankAccount:
     all_accounts = []
@@ -79,7 +81,7 @@ class BankAccount:
 
 oliver = User("Oliver Oli", "guido@python.com", "2/12/2000", "Checking")
 matt = User("Matty Matt", "monty@python.com", "9/6/1990", "Checking", .01, 0)
-james = User("James Luty", "jluty@python.com", "1/25/1986", "Checking", .01, 0)
+james = User("James Luty", "jluty@python.com", "1/25/1986", "Checking", .01, 1000)
 james_savings = User("James Luty", "jluty@python.com", "1/25/1986", "Savings", .8, 0)
 
 
@@ -87,7 +89,6 @@ oliver.make_deposit(500, "Checking").make_deposit(200, "Checking").make_deposit(
 matt.make_deposit(1000, "Checking").make_deposit(1500, "Checking").make_withdrawal(500, "Checking").make_withdrawal(200, "Checking").make_withdrawal(300, "Checking").make_withdrawal(100, "Checking") # .display_user_balance("Checking")
 james_savings.make_deposit(500, "Savings") # .display_user_balance("Savings")
 
-print(james_savings.transfer_money("matt", "Checking", 500, "Savings"))
+print(james.transfer_money(matt, "Savings", 500, "Checking"))
 
-# BankAccount.display_all_info()
 

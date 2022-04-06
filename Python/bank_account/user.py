@@ -46,7 +46,7 @@ james.make_deposit(2000000).make_withdrawal(20000).display_user_balance().transf
 # print(james.balance)
 
 # Transfer
-# james.transfer_money(matt, 500)
+james.transfer_money(matt, 500)
 
 # oliver.display_user_balance()
 # matt.display_user_balance()
