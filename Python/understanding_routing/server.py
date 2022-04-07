@@ -11,22 +11,22 @@ def hello_world():
 def dojo():
     return "Dojo!"
 
-@app.route('/say/flask')
+@app.route('/say/<string:flask>')
 
 def say_flask():
     return "Hi Flask!"
 
-@app.route('/say/michael')
+@app.route('/say/<string:michael>')
 
 def say_michael():
     return "Hi Michael!"
 
-@app.route('/say/john')
+@app.route('/say/<string:john>')
 
 def say_john():
     return "Hi John!"
 
-@app.route('/repeat/35/hello')
+@app.route('/repeat/<int:35>/hello')
 
 def repeat_hello():
     hello = ""
@@ -34,7 +34,7 @@ def repeat_hello():
         hello += "hello\n"
     return hello
 
-@app.route('/repeat/80/bye')
+@app.route('/repeat/<int:80>/bye')
 
 def repeat_bye():
     bye = ""
@@ -42,7 +42,7 @@ def repeat_bye():
         bye += "bye\n"
     return bye
 
-@app.route('/repeat/99/dogs')
+@app.route('/repeat/<int:99>/dogs')
 
 def repeat_dogs():
     dogs = ""
