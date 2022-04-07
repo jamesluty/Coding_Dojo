@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <style>
+        body {
+            background-color: lightseagreen;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            background-color: {{ color }};
+            border: 3px solid black;
+            border-radius: 5%;
+            height: 200px;
+            width: 200px;
+            margin: 15px 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <div class="main">
+
+        {% for num in range(num) %}
+            <div class="box"></div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
