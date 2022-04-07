@@ -1,3 +1,4 @@
+from ast import Num
 from flask import Flask
 
 app = Flask(__name__)
@@ -13,40 +14,40 @@ def dojo():
 
 @app.route('/say/<string:flask>')
 
-def say_flask():
-    return "Hi Flask!"
+def say_flask(flask):
+    return f"Hi {flask}!"
 
 @app.route('/say/<string:michael>')
 
-def say_michael():
-    return "Hi Michael!"
+def say_michael(michael):
+    return f"Hi {michael}!"
 
 @app.route('/say/<string:john>')
 
-def say_john():
-    return "Hi John!"
+def say_john(john):
+    return f"Hi {john}!"
 
-@app.route('/repeat/<int:35>/hello')
+@app.route('/repeat/<int:num>/hello')
 
-def repeat_hello():
+def repeat_hello(num):
     hello = ""
-    for x in range(35):
+    for x in range(num):
         hello += "hello\n"
     return hello
 
-@app.route('/repeat/<int:80>/bye')
+@app.route('/repeat/<int:num>/bye')
 
-def repeat_bye():
+def repeat_bye(num):
     bye = ""
-    for x in range(80):
+    for x in range(num):
         bye += "bye\n"
     return bye
 
-@app.route('/repeat/<int:99>/dogs')
+@app.route('/repeat/<int:num>/dogs')
 
-def repeat_dogs():
+def repeat_dogs(num):
     dogs = ""
-    for x in range(99):
+    for x in range(num):
         dogs += "dogs\n"
     return dogs
 
