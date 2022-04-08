@@ -5,9 +5,9 @@ app = Flask(__name__)
 @app.route('/list')
 def list():
     studentsInfo = [
-        {'first' : 'Michael', 'last' : 'Choi'},
-        {'first' : 'John', 'last' : 'Supsupin'},
-        {'first' : 'Mark', 'last' : 'Guillen'}
+        {'first' : 'James', 'last' : 'Luty'},
+        {'first' : 'Obi', 'last' : 'Wan'},
+        {'first' : 'Darth', 'last' : 'Vader'}
     ]
     return render_template('index.html', students=studentsInfo)
 
