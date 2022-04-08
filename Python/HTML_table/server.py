@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/list')
 def list():
     studentsInfo = [
-        {'first' : 'James', 'last' : 'Luty'},
+        {'first': 'James', 'last': 'Luty'},
         {'first' : 'Obi', 'last' : 'Wan'},
         {'first' : 'Darth', 'last' : 'Vader'}
     ]
