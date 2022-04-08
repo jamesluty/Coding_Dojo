@@ -11,7 +11,17 @@ def index():
 
 @app.route('/count')
 def add_one():
+    return redirect('/')
+
+@app.route('/two')
+def add_two():
     session['count'] += 1
+    return redirect('/')
+
+@app.route('/input', methods=['POST'])
+def add_input():
+    amount = request.form['amount']
+    session['count'] += int(amount) - 1
     return redirect('/')
 
 @app.route('/clear')

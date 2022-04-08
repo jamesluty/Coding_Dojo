@@ -9,7 +9,7 @@
 }
 
 .button1 {
-    background-color: blue;
+    background-color: green;
     color: white;
     margin-right: 50px;
     padding: 5px;
@@ -18,10 +18,26 @@
 }
 
 .button2 {
-    background-color: red;
+    background-color: blue;
     color: white;
-    margin-left: 50px;
+    margin-right: 50px;
     padding: 5px;
     text-align: center;
     width: 60px;
+}
+
+.button3 {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 60px;
+}
+
+.input {
+    background-color: aquamarine;
+    color: black;
+    width: 80px;
+    height: 23px;
+    margin-right: 50px;
 }
