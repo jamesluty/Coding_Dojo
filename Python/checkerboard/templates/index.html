@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <style>
+        .squares1 {
+            background-color: {{ row_color }};
+        }
+
+        .squares2 {
+            background-color: {{ column_color }};
+        }
+    </style>
+    
+    <title>Checkerboard</title>
+</head>
+<body>
+    <h1>*** Checkerboard ***</h1>
+
+    <div class="board">
+        <table>
+            {% for i in range(row) %}
+            <tr>
+                {% for j in range(col) %}
+                    <td class="squares{{ (i+j)%2+1 }}"></td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+
+
+</body>
+</html>
