@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Great Number Game</title>
+
+    <style>
+        .reset_button {
+            display: {{ button }};
+        }
+        .attempts {
+            display: {{ button }};
+        }
+        .tries {
+            display: {{ tries }};
+        }
+    </style>
+
+</head>
+<body>
+    <div class="head">
+        <h1>Welcome to the Great Number Game!</h1>
+        <h3>I am thinking of a number between 1 and 100</h3>
+        <h3>Take a guess!</h3>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h1>{{ output_text }} </h1>
+            <form action="/clear" method="post">
+                <button class='reset_button'>Play Again?</button>
+            </form>
+            <h1 class="tries">{{ attempts }}</h1>
+            <p class="attempts">It took you {{ attempts }} tries</p>
+        </div>
+    </div>
+    <div class="selection">
+        <form action="/guess" method="post">
+            <table class="inputform">
+                <tr>
+                    <td><label for="number">Take a guess!</label></td>
+                </tr>
+                <tr>
+                    <td><input class="input_box" type="number" name="number" min="1" max="100" placeholder="Input a number"></td>
+                </tr>
+                <tr>
+                    <td><button class="submit">Guess</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

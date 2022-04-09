@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(193,193,193);
+}
+
+/* Game header */
+.head {
+    margin: 25px 0px;
+    text-align: center;
+}
+
+/* Response Box  */
+.container {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    align-items: center;
+    background-color: blue;
+    border: 4px solid black;
+    border-radius: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    width: 300px;
+}
+
+.reset_button {
+    background-color: greenyellow;
+    box-shadow: 3px 3px 3px;
+    display: none;
+    padding: 5px;
+}
+
+.attempts {
+    display: none;
+}
+
+.tries {
+    display: none;
+}
+
+/* Guess Box */
+.selection {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.inputbox {
+    text-align: center;
+}
+
+.inputform {
+    background-color: rgb(52,58,62);
+    color: orange;
+    border-radius: 5%;
+    font-size: 15pt;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.inputform td {
+    padding: 5px 0px;
+}
+
+.submit {
+    background-color: orange;
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px;
+    color: black;
+    height: 30px;
+    width: 100px;
+}
+
+.input_box {
+    width: 150px;
+}
