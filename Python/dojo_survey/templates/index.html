@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dojo Survery</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="survey_box">
+            <!-- survery box section -->
+            <h1 class="header">Dojo Survey</h1>
+            <form action="/results" method="post">
+
+                <!-- name input -->
+                <p>Name: </p>
+                <input class="inputs" type="text" name="name">
+
+                <!-- location selection -->
+                <p>Dojo Location:</p>
+                <select class="select" name="location">
+                    <option value="Seattle">Seattle</option>
+                    <option value="Portland">Portland</option>
+                    <option value="Los Angeles">Los angeles</option>
+                    <option value="Honolulu">Honolulu</option>
+                    <option value="New York City">New York City</option>
+                    <option value="Miami">Miami</option>
+                </select>
+
+                <!-- full time or part time radio buttons -->
+                <div class="radio_wrapper">
+                    <div class="radio">
+                        <input type="radio" name="course" value="Full Time">
+                        <p>Full time</p>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="course" value="Part Time">
+                        <p>Part Time</p>
+                    </div>
+                </div>
+
+                <!-- language selection -->
+                <p>Favorite Language:</p>
+                <select class="select" name="language">
+                    <option value="Python">Python</option>
+                    <option value="MERN">MERN</option>
+                    <option value="c#">C#</option>
+                    <option value="Java">Java</option>
+                </select>
+
+                <!-- comments section -->
+                <p>Comment (optional):</p>
+                <textarea class="textbox" name="comments" maxlength="100" cols="30" rows="10" placeholder="Enter comment"></textarea>
+                <div class="submit">
+                    <p>Max length is 100 characters</p>
+                    <input class="submit_button" type="submit" value="Submit Info">
+                </div>
+
+                <!-- check box if you love coding dojo -->
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox" value="Yes">
+                    <p>Check box if you love Coding Dojo</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+    /* color: orange; */
+    margin: 0px;
+    padding: 5px;
+}
+
+/* Wrapper class */
+.wrapper {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/* Survey Box */
+.header {
+    color: orange;
+}
+
+.survey_box {
+    background-color: rgb(51,57,62);
+    padding: 20px;
+    width: 300px;
+}
+
+.inputs {
+    border: 0px;
+    height: 20px;
+    width: 96%;
+}
+
+p {
+    color: orange;
+}
+
+.radio_wrapper {
+    display: flex;
+    height: 25px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.radio {
+    align-items: center;
+    display: flex;
+}
+
+.select {
+    height: 30px;
+    width: 100%;
+}
+
+.textbox {
+    height: 50px;
+    width: 96%;
+}
+
+.submit {
+    border: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.submit p {
+    color: orange;
+    font-size: 10pt;
+    padding: 0px;
+}
+
+.submit_button {
+    background-color: orange;
+    box-shadow: 3px 3px 3px;
+}
+
+.checkbox {
+    align-items: center;
+    color: orange;
+    display: flex;
+}
+
+/* Survey Results Page */
+.title {
+    color: orange;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.return_button {
+    display: flex;
+    justify-content: end;
+}
