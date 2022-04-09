@@ -10,6 +10,7 @@ def index():
     output = ""
     attempts = 0
     show_tries = ""
+    show_count = ""
 
     if session.get('number') is None:
         session['number'] = random.randint(1,100)
@@ -20,6 +21,7 @@ def index():
         if int(session['guess']) == int(session['number']):
             output = "Correct"
             show_button = "flex"
+            show_count = "flex"
             session['attempts'] += 1
         elif int(session['guess']) > int(session['number']):
             output = "Too high"
@@ -33,7 +35,8 @@ def index():
     if session['attempts'] == 5:
         output = "You lose!"
         show_button = "flex"
-    return render_template("index.html", tries=show_tries, output_text=output, button=show_button, attempts=session['attempts'])
+        show_tries = ""
+    return render_template("index.html", counter=show_count, tries=show_tries, output_text=output, button=show_button, attempts=session['attempts'])
 
 @app.route('/guess', methods=['POST'])
 def make_guess():
