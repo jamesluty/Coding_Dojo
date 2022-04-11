@@ -72,7 +72,7 @@ function oddOccurrencesInArray(nums) {
     let dict = makeFrequencyTable(nums);
     for (let key in dict){
         if (dict[key] % 2 == 1){
-            return key;
+            return +key
         }
     }
     return null;
