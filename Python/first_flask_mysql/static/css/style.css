@@ -1,0 +1,10 @@
+/* index.html css */
+.index_header {
+    padding: 15px;
+}
+
+/* create.html css */
+.create_header {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,33 @@
+/* index.html css */
+.index_header {
+    padding: 15px;
+}
+
+.user_table {
+    margin-left: 15px;
+}
+
+/* create.html css */
+.create_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    width: 25%;
+}
+
+.user_input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 25%;
+}
+
+.input_name {
+    padding: 5px 0px;
+}
+
+.submit_button {
+    margin-top: 10px;
+    width: 100px;
+}
