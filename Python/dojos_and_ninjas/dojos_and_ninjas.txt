@@ -1,0 +1,31 @@
+SELECT * FROM dojos;
+
+INSERT INTO dojos (name) VALUE ('Python');
+INSERT INTO dojos (name) VALUE ('C#');
+INSERT INTO dojos (name) VALUE ('JAVA');
+
+DELETE FROM dojos WHERE id = 1;
+DELETE FROM dojos WHERE id = 2;
+DELETE FROM dojos WHERE id = 3;
+
+INSERT INTO dojos (name) VALUE ('HTML');
+INSERT INTO dojos (name) VALUE ('CSS');
+INSERT INTO dojos (name) VALUE ('JAVASCRIPT');
+
+SELECT * FROM ninjas;
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUE ('James', 'Luty', 36, 4);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUE ('Luke', 'Skywalker', 20, 4);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUE ('Yoda', 'Master', 900, 4);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUE ('Darth', 'Vader', 150, 5);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUE ('Darth', 'Sidius', 150, 5);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUE ('Darth', 'Palpatine', 150, 5);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUE ('Obi', 'Wan', 162, 6);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUE ('Anakin', 'Skywalker', 5, 6);
+INSERT INTO ninjas (first_name, last_name, age, dojo_id) VALUE ('Han', 'Solo', 50, 6);
+
+SELECT * FROM ninjas WHERE dojo_id = 4;
+
+SELECT * FROM ninjas WHERE dojo_id = 6;
+
+SELECT dojo_id FROM ninjas WHERE id = 13;
