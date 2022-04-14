@@ -28,6 +28,36 @@ class Users:
         return friends
 
     @classmethod
+    def get_one(cls, data):
+        query = "SELECT * FROM users WHERE id = %(id)s"
+        result = connectToMySQL('user_schemas').query_db(query, data)
+        if result:
+            return cls(result[0])
+
+        return False
+
+    @classmethod
+    def update(cls, data):
+        query = "UPDATE users SET first_name = %(first_name)s, last_name = %(last_name)s, email = %(email)s WHERE id = %(id)s;"
+        result = connectToMySQL('user_schemas').query_db(query, data)
+
+        if result:
+            return True
+
+        return False
+
+    @classmethod
+    def destroy(cls, data):
+        query = "DELETE FROM users WHERE id = %(id)s;"
+        result = connectToMySQL('user_schemas').query_db(query, data)
+
+        if result:
+            return True
+
+        return False
+
+
+    @classmethod
     def save(cls, data ):
         query = "INSERT INTO users ( first_name , last_name , email ) VALUES ( %(first_name)s , %(last_name)s , %(email)s );"
         # data is a dictionary that will be passed into the save method from server.py

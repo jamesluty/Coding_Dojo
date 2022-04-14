@@ -7,6 +7,18 @@
     margin-left: 15px;
 }
 
+.action {
+    display: flex;
+}
+
+.action a, .action p {
+    padding-right: 5px;
+}
+
+td {
+    height: 40px;
+}
+
 /* create.html css */
 .create_header {
     align-items: center;
@@ -30,4 +42,44 @@
 .submit_button {
     margin-top: 10px;
     width: 100px;
+}
+
+/* Show user css */
+.user_header {
+    margin-left: 15px;
+}
+.display_box {
+    border: 3px solid black;
+    margin-left: 15px;
+    width: 25%;
+}
+
+.display_box p {
+    padding-left: 10px;
+}
+
+.display_box span {
+    font-weight: bold;
+}
+
+.edit_options {
+    align-items: center;
+    display: flex;
+    margin-left: 15px;
+}
+
+.edit_options p {
+    padding: 0px 5px;
+}
+
+/* Edit user css */
+.edit_nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit_button {
+    background-color: blue;
+    color: white;
 }

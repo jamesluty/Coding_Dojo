@@ -9,18 +9,22 @@
 </head>
 <body>
     <div class="create_header">
-        <h1>Add a New User</h1>
+        <h1>Edit User {{ user.id }}</h1>
         <a href="/user">Home</a>
     </div>
-    <form action="/create" method="POST">
+    <form action="/user/update" method="POST">
         <div class="user_input">
+            <input type="hidden" name="id" value="{{ user.id }}">
             <label class="input_name" for="first_name">First Name:</label>
-            <input type="text" name="first_name">
+            <input type="text" name="first_name" value="{{ user.first_name }}">
             <label class="input_name" for="last_name">Last Name:</label>
-            <input type="text" name="last_name">
+            <input type="text" name="last_name" value="{{ user.last_name }}">
             <label class="input_name" for="email" >Email:</label>
-            <input type="email" name="email">
-            <input class="submit_button" type="submit" value="Create User">
+            <input type="email" name="email" value="{{ user.email }}">
+            <div class="edit_nav">
+                <input class="submit_button" type="submit" value="Update User">
+                <a href="/user/show/{{ user.id }}">Show User</a>
+            </div>
         </div>
     </form>
 </body>
