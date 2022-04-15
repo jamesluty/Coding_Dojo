@@ -1,0 +1,92 @@
+body {
+    margin: 0px 200px;
+}
+
+/* Main dojo html page */
+.dojo_wrapper {
+    display: flex;
+}
+
+.add_name {
+    align-items: center;
+    display: flex;
+}
+
+.add_name p {
+    margin: 0px;
+}
+
+.add_name input {
+    margin-left: 5px;
+}
+
+.create_dojo  {
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.new_column, .all_column {
+    flex: 1;
+}
+
+.dojos {
+    margin-bottom: 20px;
+}
+
+.dojos {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+
+/* Ninjas html css */
+.wrapper {
+    background-color: rgb(52,57,62);
+    color: orange;
+    padding: 30px;
+    width: 25%;
+}
+
+.wrapper h1 {
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.input_field {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_field p {
+    margin-bottom: 5px;
+}
+
+.input_field input {
+    width: 100px;
+}
+
+.create_button {
+    background-color: blue;
+    color: white;
+    margin-top: 20px;
+}
+
+.nav_buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_buttons a {
+    color: orange;
+}
+
+/* Show dojos html page */
+.show_wrapper {
+    margin: 30px 0px 0px 200px;
+}
