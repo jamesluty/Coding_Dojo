@@ -13,6 +13,10 @@
 }
 
 /* Survey Box */
+.alert {
+    background-color: gainsboro;
+    color: red;
+}
 .header {
     color: orange;
 }
@@ -34,10 +38,10 @@ p {
 }
 
 .radio_wrapper {
+    align-items: center;
     display: flex;
     height: 25px;
     padding: 0px;
-    margin-top: 10px;
 }
 
 .radio {
@@ -73,6 +77,10 @@ p {
     box-shadow: 3px 3px 3px;
 }
 
+.input_name {
+    color: whitesmoke;
+}
+
 .checkbox {
     align-items: center;
     color: orange;
@@ -89,4 +97,8 @@ p {
 .return_button {
     display: flex;
     justify-content: end;
+}
+
+.list {
+    list-style: none;
 }

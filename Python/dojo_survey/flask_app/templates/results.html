@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
+    <title>Survey Results</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="survey_box">
+            <h3 class="title">Submitted Infomation</h3>
+            <ul class="list">
+                {% for item in survey %}
+                    <li>Name: {{ item.name }}</li>
+                    <li>Location: {{ item.location }}</li>
+                    <li>Course: {{ item.course }}</li>
+                    <li>Language: {{ item.language }}</li>
+                    <li>Comment: {{ item.comment }}</li>
+                    <li>Checkbox: {{ item.checkbox }}</li>
+                {% endfor %}
+            </ul>
+            <form class="return_button" action="/">
+                <input class="submit_button" type="submit" value="Go back">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

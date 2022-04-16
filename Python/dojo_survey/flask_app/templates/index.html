@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
     <title>Dojo Survery</title>
 </head>
 <body>
@@ -12,14 +12,17 @@
         <div class="survey_box">
             <!-- survery box section -->
             <h1 class="header">Dojo Survey</h1>
-            <form action="/results" method="post">
+            <form action="/add/survey" method="post">
 
                 <!-- name input -->
-                <p>Name: </p>
+                <p class="input_name">Name*: </p>
                 <input class="inputs" type="text" name="name">
+                {% for message in get_flashed_messages(category_filter=["err_name"]) %}
+                <p class="alert">{{ message }}</p>
+                {% endfor %}
 
                 <!-- location selection -->
-                <p>Dojo Location:</p>
+                <p class="input_name">Dojo Location*:</p>
                 <select class="select" name="location">
                     <option value="Seattle">Seattle</option>
                     <option value="Portland">Portland</option>
@@ -28,11 +31,15 @@
                     <option value="New York City">New York City</option>
                     <option value="Miami">Miami</option>
                 </select>
+                {% for message in get_flashed_messages(category_filter=["err_location"]) %}
+                <p class="alert">{{ message }}</p>
+                {% endfor %}
 
                 <!-- full time or part time radio buttons -->
+                <p class="input_name">Course Type*:</p>
                 <div class="radio_wrapper">
                     <div class="radio">
-                        <input type="radio" name="course" value="Full Time">
+                        <input checked type="radio" name="course" value="Full Time">
                         <p>Full time</p>
                     </div>
                     <div class="radio">
@@ -40,19 +47,25 @@
                         <p>Part Time</p>
                     </div>
                 </div>
+                {% for message in get_flashed_messages(category_filter=["err_course"]) %}
+                <p class="alert">{{ message }}</p>
+                {% endfor %}
 
                 <!-- language selection -->
-                <p>Favorite Language:</p>
+                <p class="input_name">Favorite Language*:</p>
                 <select class="select" name="language">
                     <option value="Python">Python</option>
                     <option value="MERN">MERN</option>
                     <option value="c#">C#</option>
                     <option value="Java">Java</option>
                 </select>
+                {% for message in get_flashed_messages(category_filter=["err_language"]) %}
+                <p class="alert">{{ message }}</p>
+                {% endfor %}
 
                 <!-- comments section -->
-                <p>Comment (optional):</p>
-                <textarea class="textbox" name="comments" maxlength="100" cols="30" rows="10" placeholder="Enter comment"></textarea>
+                <p class="input_name">Comment (optional):</p>
+                <textarea class="textbox" name="comment" maxlength="100" cols="30" rows="10" placeholder="Enter comment"></textarea>
                 <div class="submit">
                     <p>Max length is 100 characters</p>
                     <input class="submit_button" type="submit" value="Submit Info">
@@ -60,7 +73,7 @@
 
                 <!-- check box if you love coding dojo -->
                 <div class="checkbox">
-                    <input type="checkbox" name="checkbox" value="Yes">
+                    <input checked type="checkbox" name="checkbox">
                     <p>Check box if you love Coding Dojo</p>
                 </div>
             </form>

@@ -30,7 +30,7 @@ class Dojos:
 
     @classmethod
     def get_one(cls, data):
-        query = "SELECT * FROM dojos JOIN ninjas ON ninjas.dojo_id = dojos.id WHERE dojo_id = %(id)s;"
+        query = "SELECT * FROM dojos LEFT JOIN ninjas ON ninjas.dojo_id = dojos.id WHERE dojo_id = %(id)s;"
         results = connectToMySQL(DATABASE).query_db(query, data)
         dojo = cls(results[0])
         # print(dojo)

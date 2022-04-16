@@ -1,0 +1,93 @@
+/* global css */
+/* body {
+    margin: 0px 15%;
+} */
+
+/* Authors html page */
+.wrapper {
+    display: flex;
+    gap: 200px;
+    margin: 40px 15%;
+}
+
+.left, .right {
+    background-color: rgb(52,57,62);
+    border: 3px solid black;
+    color: white;
+    flex: 1;
+    padding: 20px;
+    margin: 40px 0px;
+}
+
+.left h1, .right h1 {
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.form_author {
+    display: flex;
+}
+
+.form_author p {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: blue;
+    border:3px solid black;
+    box-shadow: 3px 3px 3px black;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    width: 85px;
+}
+
+.nav_link {
+    margin-left: 15%;
+}
+
+.display_items {
+    display: flex;
+    flex-direction: column;
+}
+
+.display_items a {
+    color: orange;
+    padding-bottom: 10px;
+}
+
+/* Book html page */
+.input {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input p {
+    margin: 0px;
+}
+
+.input input {
+    margin: 10px 0px;
+}
+
+.display {
+    display: flex;
+}
+
+.show_left h1, .show_right h1 {
+    margin-bottom: 20px;
+}
+
+.display {
+    display: flex;
+}
+
+.display p {
+    margin: 0px 10px 0px 0px;
+}
+
+.add_book {
+    margin-top: 20px;
+}
