@@ -28,6 +28,6 @@ def add_survey():
         'comment': request.form['comment'],
         'checkbox': request.form['checkbox']
     }
-    survey = Survey.add_survey(data)
+    Survey.add_survey(data)
 
     return redirect('/results')

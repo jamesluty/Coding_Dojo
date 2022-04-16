@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: teal;
+    color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+    width: 25%;
+}
+
+.email {
+    display: flex;
+}
+
+.email p {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: blue;
+    box-shadow: 3px 3px 3px black;
+    color: white;
+    margin-top: 20px;
+}
+
+.email_header {
+    text-decoration: underline;
+}
+
+.alert {
+    background-color: gainsboro;
+    color: red;
+    padding: 5px;
+}
+
+.email_wrapper {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.email_wrapper a {
+    color: orange;
+}
