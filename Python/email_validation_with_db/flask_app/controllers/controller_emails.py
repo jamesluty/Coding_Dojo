@@ -23,3 +23,8 @@ def validate_email():
 def success():
     emails = Email.show_emails()
     return render_template("success.html", all_emails=emails)
+
+@app.route("/delete/<int:id>")
+def delete_email(id):
+    Email.delete_email({'id':id})
+    return redirect("/success")
