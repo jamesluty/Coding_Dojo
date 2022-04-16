@@ -49,11 +49,3 @@ body {
 .email_wrapper a {
     color: orange;
 }
-
-.right {
-    text-align: right;
-}
-
-.table > td {
-    gap: 20px;
-}
