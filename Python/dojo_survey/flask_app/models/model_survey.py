@@ -46,11 +46,13 @@ class Survey:
             flash("Location is required!", 'err_location')
             is_valid = False
 
-        if form_data['course'] != 'Full Time' or form_data['course'] != 'Part Time':
+        # if form_data['course'] != 'Full Time' or form_data['course'] != 'Part Time':
+        if len(form_data['course']) <= 0:
             flash("Course is required!", 'err_course')
             is_valid = False
 
-        if form_data['language'] != 'Python' or form_data['language'] != 'MERN' or form_data['language'] != 'C#' or form_data['language'] != 'JAVA':
+        # if form_data['language'] != 'Python' or form_data['language'] != 'MERN' or form_data['language'] != 'C#' or form_data['language'] != 'JAVA':
+        if len(form_data['language']) <= 0:
             flash("Language is required!", 'err_language')
             is_valid = False
 
