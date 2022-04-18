@@ -37,9 +37,12 @@ class Login:
     def login_user(cls, data):
         query = "SELECT * FROM users WHERE id = %(id)s;"
         results = connectToMySQL(DATABASE).query_db(query, data)
-        user = cls(results[0])
+        
+        if results:
+            user = cls(results[0])
+            return user
 
-        return user
+        return False
 
     @classmethod
     def get_one_by_email(cls, data):

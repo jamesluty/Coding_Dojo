@@ -39,7 +39,7 @@ def welcome():
     if 'uuid' in session:
         user = Login.login_user({'id': session['uuid']})
         context['user'] = user
-
+    print(context)
     return render_template("welcome.html", **context)
 
 @app.route("/login", methods=['POST'])
