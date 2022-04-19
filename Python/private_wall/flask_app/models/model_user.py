@@ -14,6 +14,7 @@ class User:
         self.password = data['password']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
+        self.message = []
 
     @classmethod
     def create_user(cls, data):
@@ -55,6 +56,11 @@ class User:
 
         return False
 
+    @classmethod
+    def get_others(cls, data):
+        query = "SELECT * FROM users WHERE id != %(id)s;"
+        return connectToMySQL(DATABASE).query_db(query, data)
+
     @staticmethod
     def validate_email(data):
         query = "SELECT * FROM users"
@@ -93,11 +99,15 @@ class User:
             is_valid = False
         else:
             potential_user = User.get_one_by_email({'email': form_data['email']})
-            if not bcrypt.check_password_hash(potential_user.password, form_data['password']):
-                flash("Invalid credentials!", 'err_password_login')
-                is_valid = False
+            if potential_user:
+                if not bcrypt.check_password_hash(potential_user.password, form_data['password']):
+                    flash("Invalid credentials!", 'err_password_login')
+                    is_valid = False
+                else:
+                    session['uuid'] = potential_user.id
             else:
-                session['uuid'] = potential_user.id
+                flash("Email not found! Please register email first!", "err_email_login")
+                is_valid = False
 
         return is_valid
 

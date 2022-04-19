@@ -1,11 +1,12 @@
 from flask_app import app, bcrypt
 from flask import render_template, redirect, request, session
-from flask_app.models.model_login import User
+from flask_app.models.model_user import User
+from flask_app.models.model_message import Message
 
 @app.route("/")
 def index():
     if 'uuid' in session:
-        return redirect('/welcome')
+        return redirect('/wall')
     return render_template("index.html")
 
 @app.route("/register", methods=['POST'])
@@ -30,18 +31,6 @@ def register():
 
     return redirect('/wall')
 
-@app.route("/wall")
-def welcome():
-    context = {
-        'all_users': User.get_all()
-    }
-
-    if 'uuid' in session:
-        user = User.login_user({'id': session['uuid']})
-        context['user'] = user
-    print(context)
-    return render_template("wall.html", **context)
-
 @app.route("/login", methods=['POST'])
 def login():
     is_valid = User.validate_login(request.form)
@@ -50,7 +39,19 @@ def login():
 
     return redirect("/wall")
 
+@app.route('/send/message/<int:recepient>', methods=['POST'])
+def send_message(recepient):
+    data = {
+        **request.form,
+        'id': session['uuid'],
+        'recepient': recepient
+    }
+
+    Message.send_message_to_user(data)
+
+    return redirect('/wall')
+
 @app.route("/logout")
 def logout():
-    session.clear()
+    session.pop('uuid')
     return redirect("/")
