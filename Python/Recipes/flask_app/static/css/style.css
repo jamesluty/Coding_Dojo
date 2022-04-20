@@ -1,0 +1,146 @@
+/* global css */
+p {
+    color: red;
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+/* Landing page */
+.wrapper {
+    display: flex;
+    gap: 150px;
+    margin: 0px 20%;
+}
+
+.input {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.input p {
+    color: white;
+    margin-right: 10px;
+}
+
+.input input {
+    margin: 5px 0px;
+}
+
+.button {
+    background-color: blue;
+    border: solid black;
+    box-shadow: 3px 3px 3px black;
+    color: white;
+    padding: 3px 8px;
+}
+
+.button2 {
+    background-color: greenyellow;
+    box-shadow: 3px 3px 3px black;
+    border: solid black;
+    color: black;
+    margin-top: 10px;
+    padding: 2px 8px;
+}
+
+#required {
+    color: orange;
+}
+
+.register {
+    background-color: rgb(52,57,62);
+    color: blue;
+    flex: 1;
+    padding: 20px;
+}
+
+.login {
+    background-color: rgb(52,57,62);
+    color: greenyellow;
+    flex: 1;
+    padding: 20px;
+}
+
+.register h1, .login h1 {
+    margin: 0px;
+    padding: 5px;
+}
+
+.link_button {
+    background-color: blue;
+    border: 3px solid black;
+    border-radius: 10%;
+    box-shadow: 3px 3px 3px black;
+    color: white;
+    margin-right: 60px;
+    padding: 1px 5px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+
+/* Dashboard html page */
+.navbar {
+    align-items: center;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.dashboard_body {
+    margin: 20px 20px;
+}
+
+.dashboard_body p {
+    color: black;
+}
+
+/* Add Receipe html page */
+.add_wrapper {
+    display: flex;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.form {
+    margin: 50px 50px;
+}
+
+.form p {
+    color: black;
+}
+
+.time {
+    margin-top: 20px;
+}
+
+.form_data {
+    margin-bottom: 10px;
+}
+
+/* View Recipe page */
+.view_recipe {
+    border: 3px solid black;
+}
+
+.recipe_output {
+    display: flex;
+    padding: 10px;
+}
+
+.recipe_output p {
+    color: black;
+}
+
+.left_side {
+    flex: 1;
+}
+
+.right_side {
+    flex: 5;
+}
