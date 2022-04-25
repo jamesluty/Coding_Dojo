@@ -40,7 +40,10 @@ function makeFrequencyTable(arr) {
             output[item] = 0
         }
         output[item] += 1
+
+        
     }
+
     return output;
 }
 
