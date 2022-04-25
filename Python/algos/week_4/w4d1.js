@@ -1,4 +1,4 @@
-/* 
+/*
   Recursively sum an arr of ints
 */
 
