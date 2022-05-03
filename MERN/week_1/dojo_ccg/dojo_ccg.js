@@ -6,15 +6,15 @@ class Card {
 }
 
 class Unit extends Card {
-    constructor(name, cost, power, res) {
+    constructor(name, cost, power, resilience) {
         super(name, cost); 
         this.power = power;
-        this.res = res;
+        this.resilience = resilience;
     }
 
     attack(target) {
-        target.res -= this.power;
-        console.log(this.name + " attacked " + target.name + " and lowered their resilience to " + target.res);
+        target.resilience -= this.power;
+        console.log(this.name + " attacked " + target.name + " and lowered their resilience to " + target.resilience);
     }
 }
 
@@ -27,8 +27,9 @@ class Effect extends Card {
     }
 
     play( unit ) {
-        unit.res = this.magnitude;
-        console.log(unit.name + " increase their resilience by " + this.magnitude);
+        unit.cost -= this.cost
+        unit.resilience = this.magnitude;
+        console.log(unit.name + " played " + this.name + " for " + this.cost + " gold to change " + this.stat + " by " + this.magnitude );
     }
 }
 
