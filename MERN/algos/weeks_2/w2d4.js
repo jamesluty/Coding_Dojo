@@ -29,7 +29,41 @@ output: [0,1]
 */
 
 function twoSums(arr, target) {
+    let output = []
     
+    // for(let i =0; i<arr.length-1; i++){
+    //     for(let j = i+1; j<arr.length; j++){
+    //         if(arr[i] + arr[j] === target){
+    //             output.push(i);
+    //             output.push(j);
+    //             break;
+    //         }
+    //     }
+    //     if (output.length > 0){
+    //         break;
+    //     }
+    // }
+
+    // return output;
+    
+    let i = 0;
+    let j = i+1;
+
+    while (i < arr.length-1){
+        if (arr[i] + arr[j] === target){
+            output.push(i);
+            output.push(j);
+            break;
+        }
+
+        if(j === arr.length-1){
+            i++;
+            j = i;
+        }
+        j++
+    }
+
+    return output;
 }
 
 console.log(twoSums([2, 11, 7, 15], 9)); // [0,2]
