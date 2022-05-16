@@ -32,9 +32,9 @@ const output2 = [
 
 function findObjectsFilter(searchObj, items) {
     let output = []; // declaring output variable array
-    for (obj of items) { // looping through all the values of array of dictionarys
+    for (let obj of items) { // looping through all the values of array of dictionarys
         let isMatch = true; // declaring a boolean value set to true
-        for (key in searchObj){ // checking all keys in each obj
+        for (let key in searchObj){ // checking all keys in each obj
             if (obj[key] !== searchObj[key]){ // checking if the values of the search obj and array obj match
                 isMatch = false; // if not a match, change boolean to false and break
                 break;
