@@ -42,7 +42,7 @@ function findByIdAndUpdate(id, updatedVals, collection) {
                     obj[item] = updatedVals[item] // if key exist, update the value
                 }
             }
-            return obj // return updated updated obj
+            return obj // return updated obj
         }
     }
     return null // return null if none of the key exist
