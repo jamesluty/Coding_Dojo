@@ -48,9 +48,9 @@ function findByIdAndUpdate(id, updatedVals, collection) {
     return null // return null if none of the key exist
 }
 
-console.log(findByIdAndUpdate(3, { redBeltStatus: true }, students));
-console.log(findByIdAndUpdate(1, { isLateToday: true, lateCount: 16, randomKey: "randomValue"  }, students));
-console.log(findByIdAndUpdate(5, {}, students));
+console.log("1", findByIdAndUpdate(3, { redBeltStatus: true }, students));
+console.log("2", findByIdAndUpdate(1, { isLateToday: true, lateCount: 16, randomKey: "randomValue"  }, students));
+console.log("3", findByIdAndUpdate(5, {}, students));
 
 /*--- TEST the following: ---
 Input: 3, { redBeltStatus: true }, students
