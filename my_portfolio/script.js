@@ -1,12 +1,23 @@
+let slideIdx = 0;
+
 function changeImg(){
-    var imgArray = ['slideShow1', 'slideShow2', 'slideShow 3', 'slideShow4'];
-    for(i=0; i<imgArray.length; i++){
-        document.getElementsByClassName(imgArray[i]).style.display = 'none';
-        document.getElementsByClassName(imgArray[1]).style.display = 'inherit'
+    let imgArray = ['slideShow1', 'slideShow2', 'slideShow3', 'slideShow4'];
+    if(slideIdx === 0){
+        document.getElementById(imgArray[3]).style.display = "none";
     }
+    document.getElementById(imgArray[slideIdx]).style.display = 'inherit';
+    if(slideIdx > 0){
+        document.getElementById(imgArray[slideIdx-1]).style.display = "none";
+    } 
+    
+    slideIdx++;
+    if(slideIdx > imgArray.length-1){
+        slideIdx = 0;
+    }
+    setTimeout(changeImg, 3000)
 }
 
-setTimeout(changeImg, 3000);
+changeImg()
 
 function highlight(navLink){
     navLink.style.background = "black";

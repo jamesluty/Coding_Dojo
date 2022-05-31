@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,21 @@
     <title>James Luty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@500&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- header section -->
-    <div class="navbar flex align">
-        <h1>James Luty</h1>
-        <ul class="navWrapper flex align sm">
+    <div class="navbar">
+        <div class="navTitle">
+            <h1>James Luty</h1>
+        </div>
+        <ul class="navWrapper sm">
             <li onmouseover="highlight(this)" onmouseout="revert(this)">
-                <a href="#about">About</a>
+                <a href="#about">About Me</a>
             </li>
             <li onmouseover="highlight(this)" onmouseout="revert(this)">
                 <a href="#projects">Projects</a>
@@ -31,40 +37,71 @@
                 <a href="#education">Education</a>
             </li>
             <li onmouseover="highlight(this)" onmouseout="revert(this)">
-                <a href="#contact">Contact</a>
+                <a href="#contact">Contact Me</a>
             </li>
         </ul>
     </div>
 
     <!-- About Me Section -->
-    <h1 class="bodyHeader align" id="about">About Me</h1>
-    <div class="aboutContent flex align j-between">
-        <p>Hi, my name is James Luty. I was born in Jacksonville, FL but grew up in Renton, Washington. I started out going to school for and working as an Automotive Technician.
-            I decided that wasn't the path I wanted to take in life and found a job as a manual tester for a software company. That's when I realized that this is what I wanted
-            to do for the rest of my life. I started to teach myself how to program while still working and finally found the software bootcamp program at Coding Dojo. </p>
-        <div class="myPics">
-                <img src="./img/hawaii_pic.jpg" alt="hawaii_pic" id="slideShow">
-                <img src="./img/skydiving.jpg" alt="hawaii_pic" id="slideShowHidden">
-                <img src="./img/airplane.jpg" alt="hawaii_pic" id="slideShowHidden">
-                <img src="./img/seahawks.jpg" alt="hawaii_pic" id="slideShowHidden">
+    <div>
+        <h1 class="bodyHeader" id="about">About Me</h1>
+        <hr>
+        <div class="aboutContent">
+            <div class="aboutLeft">
+                <p class="smfont">Hi, my name is James Luty. I was born in Jacksonville, FL but grew up in Renton,
+                    Washington. I started
+                    out going to school for and working as an Automotive Technician.
+                    I decided that wasn't the path I wanted to take in life and found a job as a manual tester for a
+                    software company. That's when I realized that this is what I wanted
+                    to do for the rest of my life. I started to teach myself how to program while still working and
+                    finally
+                    found the software bootcamp program at Coding Dojo. </p>
+            </div>
+            <div class="aboutRight smImg">
+                <img class="fade" src="./img/hawaii_pic.jpg" alt="hawaii_img" id="slideShow1">
+                <img class="fade" src="./img/skydiving.jpg" alt="skydiving_img" id="slideShow2">
+                <img class="fade" src="./img/airplane.jpg" alt="airplane_img" id="slideShow3">
+                <img class="fade" src="./img/seahawks.jpg" alt="seahawks_img" id="slideShow4">
+            </div>
         </div>
     </div>
 
     <!-- Projects Section -->
-    <h1 class="bodyHeader" id="projects">Projects</h1>
+    <div>
+        <div class="babyProject">
+            <h1 class="bodyHeader" id="projects">Projects</h1>
+            <hr>
+            <div class="projectsContent">
+                <div class="projectLeft">
+
+                </div>
+                <div class="projectRight">
+                    <div class="projectHeader">
+                        <h2 class="babyName">Baby to Baby</h2>
+                        <h3>Built with Python | Flask | MySQL</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Skills section -->
     <h1 class="bodyHeader" id="skills">Skills</h1>
+    <hr>
 
     <!-- Experience section -->
     <h1 class="bodyHeader" id="experience">Experience</h1>
+    <hr>
 
     <!-- Education section -->
     <h1 class="bodyHeader" id="education">Education</h1>
+    <hr>
 
     <!-- Contact Me section -->
-    <h1 class="bodyHeader" id="contact">Contact</h1>
-    
+    <h1 class="bodyHeader" id="contact">Contact Me</h1>
+    <hr>
+
     <script src="script.js"></script>
 </body>
+
 </html>

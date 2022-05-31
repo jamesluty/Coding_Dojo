@@ -1,22 +1,9 @@
 /* global */
 * {
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
     font-family: 'Source Code Pro', monospace;
     margin: 0px;
-}
-
-/* css classes */
-.flex {
-    display: flex;
-}
-
-.align {
-    align-items: center;
-}
-
-.j-between {
-    justify-content: space-between;
 }
 
 /* navbar */
@@ -26,31 +13,34 @@
     color: white;
     position: fixed;
     top: 0;
-    opacity: 90%;
     width: 100%;
 }
 
-@media only screen and (max-width: 1024px){
-    .sm {
-        display: none;
-    }
+.navbar {
+    align-items: center;
+    display: flex;
 }
 
-.navbar h1 {
+.navTitle {
+    align-items: center;
+    display: flex;
     font-family: cursive;
-    flex: 2;
-    padding-left: 2%;
+    flex: 1;
+    gap: 40px;
+    margin-left: 30px;
+    width: 100%;
 }
 
 .navWrapper {
-    flex: 3;
+    display: flex;
+    flex: 4;
     justify-content: end;
     list-style: none;
     padding: 0px;
 }
 
 .navWrapper li {
-    padding: 20px 20px;
+    padding: 10px 20px;
 }
 
 .navbar a {
@@ -60,34 +50,93 @@
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1024px){
+    .sm {
+        display: none;
+    }
+    .smfont {
+        font-size: 12pt;
+    }
+}
+
 /* About me section */
 .bodyHeader {
+    align-items: center;
     font-family: cursive;
     padding: 0px 10px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 #about {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .aboutContent {
-    gap: 10%;
+    align-items: center;
+    display: flex;
+    gap: 15%;
     font-size: 15pt;
     font-weight: bold;
     flex-wrap: column;
-    padding: 30px 15%;
+    height: 400px;
+    padding: 30px 100px;
 }
 
-#slideShow {
+.aboutLeft {
+    flex: 5;
+    width: 75%;
+}
+
+.aboutRight {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    width: 10%;
+}
+
+#slideShow1 {
     border-radius: 2%;
-    gap: 25px;
-    height: 250px;
+    display: inherit;
+    justify-content: space-around;
+    height: 300px;
     width: auto;
 }
 
-#slideShowHidden {
+#slideShow2, #slideShow3, #slideShow4 {
+    border-radius: 2%;
     display: none;
+    height: 300px;
+    width: auto;
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+
 /* Projects section */
+.projectsContent {
+    display: flex;
+    padding: 20px 100px;
+}
+
+.projectLeft {
+    flex: 2;
+}
+
+.projectRight {
+    flex: 3;
+}
+
+.projectHeader {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
